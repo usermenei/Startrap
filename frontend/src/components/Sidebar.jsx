@@ -16,7 +16,7 @@ const items = [
 
 export default function Sidebar(){
   return (
-    <aside className="w-64 p-6 border-r border-white/6 glass">
+    <aside className="hidden md:block w-64 p-6 border-r border-white/6 glass">
       <div className="mb-6">
         <h1 className="text-2xl font-semibold">STARTRAP</h1>
         <p className="text-sm text-cyan-300">Ocean Intelligence Platform</p>
