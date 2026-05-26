@@ -35,7 +35,6 @@ export default function App(){
             <Route path="/settings" element={<Settings/>} />
             <Route path="/device/:id" element={<DeviceDetail/>} />
           </Routes>
-          </Routes>
           </div>
         </main>
       </div>
