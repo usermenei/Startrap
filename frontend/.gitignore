@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+# Vite / build outputs
+dist/
+build/
+.vite/
+
+# Environment files
+.env
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Test coverage
+coverage/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+
+# Misc
+*.local
