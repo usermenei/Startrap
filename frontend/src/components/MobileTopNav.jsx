@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 const items = [
   {name:'Dashboard Overview', to:'/'} ,
+  {name:'Fisherman Operations', to:'/fisherman'},
   {name:'Live Ocean Monitoring', to:'/live'},
   {name:'Plastic Pollution Analytics', to:'/analytics'},
   {name:'Marine Debris Detection', to:'/debris'},

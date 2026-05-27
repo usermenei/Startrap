@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
 import MobileTopNav from './components/MobileTopNav'
 import DashboardHome from './pages/DashboardHome'
+import FishermanDashboard from './pages/FishermanDashboard'
 import LiveMonitoring from './pages/LiveMonitoring'
 import PlasticAnalytics from './pages/PlasticAnalytics'
 import MarineDebris from './pages/MarineDebris'
@@ -24,6 +25,7 @@ export default function App(){
           <div className="p-4 md:p-0">
           <Routes>
             <Route path="/" element={<DashboardHome/>} />
+            <Route path="/fisherman" element={<FishermanDashboard/>} />
             <Route path="/live" element={<LiveMonitoring/>} />
             <Route path="/analytics" element={<PlasticAnalytics/>} />
             <Route path="/debris" element={<MarineDebris/>} />

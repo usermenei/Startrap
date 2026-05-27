@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import KpiCard from '../components/KpiCard'
 import MapStub from '../components/MapStub'
 import JakartaHeatmap from './JakartaHeatmap'
@@ -20,6 +21,19 @@ export default function DashboardHome(){
         </div>
         <div className="text-sm text-white/60">Updated: May 26, 2026</div>
       </header>
+
+      {/* Fisherman Operations Call-to-Action */}
+      <section className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6 hover:border-orange-400/50 transition">
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-xl font-bold text-orange-300 mb-2">🎣 Fisherman Operations Hub</h3>
+            <p className="text-sm text-white/80">Manage STARTRAP device maintenance, monitor cleaning status, and coordinate ghost fishing gear retrieval</p>
+          </div>
+          <Link to="/fisherman" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold whitespace-nowrap ml-4 transition">
+            Open Fisherman Dashboard →
+          </Link>
+        </div>
+      </section>
 
       <section className="grid grid-cols-4 gap-4">
         {kpis.map(k=> (
